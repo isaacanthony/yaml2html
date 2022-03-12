@@ -1,3 +1,18 @@
 a {
   text-decoration: none;
 }
+
+.img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31rem;
+}
+
+.img-home {
+  background-image: url("https://www.publicdomainpictures.net/pictures/10000/velka/87-1273073877xEjA.jpg");
+}
+
+.img-about {
+  background-image: url("https://www.publicdomainpictures.net/pictures/270000/velka/donuts-15367481797jY.jpg");
+}
