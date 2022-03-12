@@ -23,7 +23,10 @@ header:
               - tag: p
                 class: lead mb-1
                 children:
-                  - text: "&#127874; Acme Bakery"
+                  - tag: span
+                    class: cursor-pointer
+                    children:
+                      - text: "&#127874; Acme Bakery"
 
           - tag: div
             class: col-2 text-end
@@ -56,7 +59,7 @@ header:
                 children:
                   - tag: i
                     class: bi-envelope
-                  - text: Contact
+                  - text: Contact Us
 
       - tag: div
         class: row
@@ -153,7 +156,42 @@ pages:
                         pharetra diam sit. Lorem donec massa sapien faucibus et.
                         Malesuada pellentesque elit eget gravida cum.
 
-  contact: []
+  contact:
+    - tag: div
+      class: container
+      children:
+        - tag: div
+          class: row
+          children:
+            - tag: div
+              class: col-5
+              children:
+                - tag: div
+                  class: img img-contact
+
+            - tag: div
+              class: col-7
+              children:
+                - tag: p
+                  class: lead text-secondary
+                  children:
+                    - tag: i
+                      class: bi-envelope
+                    - text: Contact Us
+
+                - tag: p
+                  children:
+                    - text: >-
+                        Aenean sed adipiscing diam donec adipiscing tristique
+                        risus. Eu mi bibendum neque egestas congue quisque.
+                        Pellentesque dignissim enim sit amet. Nisi est sit amet
+                        facilisis magna etiam tempor orci eu. Aliquam nulla
+                        facilisi cras fermentum odio eu feugiat pretium nibh.
+                        Enim sed faucibus turpis in eu mi bibendum neque
+                        egestas. Aliquet lectus proin nibh nisl. Mattis
+                        pellentesque id nibh tortor id aliquet lectus proin.
+                        Nisi lacus sed viverra tellus in hac habitasse. Eu
+                        tincidunt tortor aliquam nulla facilisi cras fermentum.
 
   404:
     - tag: div

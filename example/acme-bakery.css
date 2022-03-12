@@ -16,3 +16,11 @@ a {
 .img-about {
   background-image: url("https://www.publicdomainpictures.net/pictures/270000/velka/donuts-15367481797jY.jpg");
 }
+
+.img-contact {
+  background-image: url("https://www.publicdomainpictures.net/pictures/30000/velka/chocolate-fruit-cake.jpg");
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
