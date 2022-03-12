@@ -87,10 +87,20 @@ const yaml2html = (() => {
 
   /** Parse body HTML. */
   const _parseBody = (obj) => {
+    // Parse shared header HTML.
+    if (obj.header) {
+      document.querySelector('body').innerHTML += _parseHtml(obj.header);
+    }
+
     // Add container wrapper.
     document.querySelector('body').innerHTML += `
       <div id="${CONTAINER.replace('#', '')}"></div>
     `;
+
+    // Parse shared footer HTML.
+    if (obj.footer) {
+      document.querySelector('body').innerHTML += _parseHtml(obj.footer);
+    }
 
     // Render initial page.
     _renderPage(obj, _parseRoute(obj));
